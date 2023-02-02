@@ -6,11 +6,12 @@
 # cd deployment
 # ./build-s3-dist.sh source-bucket-base-name solution-name version-code
 #
-# Paramenters:
+# The cloudformation template expects the source code to be located in the solutions-[region_name] bucket.
+# Use ./upload-s3-dist.sh to ensure naming convention matches.
+#
+# Parameters:
 #  - source-bucket-base-name: Name for the S3 bucket location where the template will source the Lambda
 #    code from. The template will append '-[region_name]' to this bucket name.
-#    For example: ./build-s3-dist.sh solutions my-solution v1.0.0
-#    The template will then expect the source code to be located in the solutions-[region_name] bucket
 #  - solution-name: name of the solution for consistency
 #  - version-code: version of the package
 

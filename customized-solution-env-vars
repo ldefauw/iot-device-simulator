@@ -1,0 +1,8 @@
+# Edit this file once then source in bash each time you start a new shell that needs to build / deploy.
+# source ./customized-solution-env-vars
+
+export MAIN_DIRECTORY=$PWD
+export REGION=us-east-2
+export DIST_BUCKET_PREFIX=imy-s3-bucket-prefix
+export SOLUTION_NAME=my-solution-name
+export VERSION=v1.0.0
